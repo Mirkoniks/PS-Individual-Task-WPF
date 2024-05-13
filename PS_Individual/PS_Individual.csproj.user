@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="Current" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup />
+  <ItemGroup>
+    <ApplicationDefinition Update="App.xaml">
+      <SubType>Designer</SubType>
+    </ApplicationDefinition>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Update="Components\CreateRecord.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Components\CreateSchoolRecord.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Components\SearchPage.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Components\SearchSchoolRecordPage.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Page Update="Components\CreateSchoolRecord.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Components\SearchPage.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Components\SearchSchoolRecordPage.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="MainWindow.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Components\CreateRecord.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+  </ItemGroup>
+</Project>

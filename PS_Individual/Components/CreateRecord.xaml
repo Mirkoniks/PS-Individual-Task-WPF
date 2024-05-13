@@ -1,0 +1,110 @@
+﻿<Window x:Class="PS_Individual.Components.CreateRecord"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:PS_Individual.Components"
+        xmlns:vm="clr-namespace:PS_Individual.ViewModels"
+        mc:Ignorable="d"
+        Title="CreateRecord" Height="800" Width="800">
+    
+        <Window.DataContext>
+            <vm:CreateRecordViewModel />
+        </Window.DataContext>
+
+    <StackPanel Orientation="Vertical">
+        <TextBlock Text="Create a Record" 
+               FontSize="25"
+               HorizontalAlignment="Center"
+               VerticalAlignment="Top"
+               FontWeight="Bold"
+               Padding="10"
+               />
+
+        <TextBlock Text="Title" 
+            FontSize="25"
+            HorizontalAlignment="Center"
+            VerticalAlignment="Top"
+            Padding="10"
+            />
+        <TextBox  
+            Width="255"
+            Text="{Binding Title,Mode=TwoWay}"
+            />
+        
+        <TextBlock Text="Author" 
+            FontSize="25"
+            HorizontalAlignment="Center"
+            VerticalAlignment="Top"
+            Padding="10"
+            />
+        <TextBox  
+            Width="255"
+            Text="{Binding Author,Mode=TwoWay}"
+            />
+
+        <TextBlock Text="Description" 
+            FontSize="25"
+            HorizontalAlignment="Center"
+            VerticalAlignment="Top"
+            Padding="10"
+            />
+        <TextBox  
+            Width="255"
+            Text="{Binding Description,Mode=TwoWay}"
+            />
+
+        <TextBlock Text="Topic" 
+            FontSize="25"
+            HorizontalAlignment="Center"
+            VerticalAlignment="Top"
+            Padding="10"
+            />
+        <TextBox  
+            Width="255"
+            Text="{Binding Topic,Mode=TwoWay}"
+            />
+
+        <TextBlock Text="SubTopic" 
+            FontSize="25"
+            HorizontalAlignment="Center"
+            VerticalAlignment="Top"
+            Padding="10"
+            />
+        <TextBox  
+            Width="255"
+            Text="{Binding SubTopic,Mode=TwoWay}"
+            />
+
+        <TextBlock Text="Product" 
+            FontSize="25"
+            HorizontalAlignment="Center"
+            VerticalAlignment="Top"
+            Padding="10"
+            />
+        <TextBox  
+            Width="255"
+            Text="{Binding Product,Mode=TwoWay}"
+            />
+
+        <TextBlock Text="Year" 
+            FontSize="25"
+            HorizontalAlignment="Center"
+            VerticalAlignment="Top"
+            Padding="10"
+            />
+        <TextBox  
+            Width="255"
+            Text="{Binding Year,Mode=TwoWay}"
+            />
+
+        <Button x:Name="LoginBtn" 
+             Content="Create" 
+             Foreground="White"
+             Background="Black"
+             Margin="0,25"
+             Command="{Binding CreateRecordCommand}"
+             Height="35"
+             Width="250"/>
+    </StackPanel>
+</Window>
